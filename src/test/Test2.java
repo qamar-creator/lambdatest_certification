@@ -14,6 +14,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+ 
 public class test2
 {
 
@@ -21,7 +22,7 @@ public class test2
 public void test_2()
 {
 
-    System.out.println("This is test for java");
+    System.out.println("This is test for java_testng");
 }
 
 }

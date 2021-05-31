@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: lambdatest_p.TestNGTodo
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.236 s - in lambdatest_p.TestNGTodo
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 10.239 s - in lambdatest_p.TestNGTodo
