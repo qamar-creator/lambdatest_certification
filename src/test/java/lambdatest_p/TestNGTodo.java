@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
@@ -39,7 +40,7 @@ public class TestNGTodo{
       } catch (Exception e) {
           System.out.println(e.getMessage());
       }
-      
+
   }
 
   @Test
@@ -48,12 +49,15 @@ public class TestNGTodo{
             //Change it to production page
           driver.get("https://www.lambdatest.com/"); // Navigate to this URL
            
-          // do Explicit wait
+          // do Explicit wait until lambdatest logo appears
           WebDriverWait wait = new WebDriverWait(driver,30);
-          wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
+          wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//img[@alt='Logo']")));
             //Let's mark done first two items in the list.
-            driver.findElement(By.name("li1")).click();
-          driver.findElement(By.name("li2")).click();
+            JavascriptExecutor je = (JavascriptExecutor) driver;
+            WebElement elmnt = driver.findElementByXPath("//a[normalize-space()='See All Integrations']");
+            je.executeScript("arguments[0].scrollIntoView(true);",elmnt);
+            System.out.println(elmnt.getText());
+            elmnt.click();
            
            // Let's add an item in the list.
             driver.findElement(By.id("sampletodotext")).sendKeys("Yey, Let's add it to list");
