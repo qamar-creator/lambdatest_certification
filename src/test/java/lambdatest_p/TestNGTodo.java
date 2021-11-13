@@ -13,10 +13,12 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class TestNGTodo{
-   public String username = "ulzaman415";
-  public String accesskey = "IvCpUpYsCbQ3u3IlH1onva4kgkg0uOMhpiTBmCFhHEiRujoSlG";
+   public String username = "Qamar";
+  public String accesskey = "wQgHKY1XQUdSGQBjnsX7fk2Adibv0yHlb1QnfvfnBUZfJPfDoO";
   public static RemoteWebDriver driver = null;
   public String gridURL = "@hub.lambdatest.com/wd/hub";
   boolean status = false;
@@ -43,8 +45,11 @@ public class TestNGTodo{
   public void testSimple() throws Exception {
      try {
             //Change it to production page
-          driver.get("https://lambdatest.github.io/sample-todo-app/");
+          driver.get("https://www.lambdatest.com/"); // Navigate to this URL
            
+          // do Explicit wait
+          WebDriverWait wait = new WebDriverWait(driver,30);
+          wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[contains(text(),'COMPOSE')]")));
             //Let's mark done first two items in the list.
             driver.findElement(By.name("li1")).click();
           driver.findElement(By.name("li2")).click();
