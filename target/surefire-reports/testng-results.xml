@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-05-31T19:38:42 UTC" name="Surefire suite" finished-at="2021-05-31T19:38:52 UTC" duration-ms="10016">
+  <suite started-at="2021-11-14T18:13:13 UTC" name="Surefire suite" finished-at="2021-11-14T18:13:25 UTC" duration-ms="12345">
     <groups>
     </groups>
-    <test started-at="2021-05-31T19:38:42 UTC" name="Surefire test" finished-at="2021-05-31T19:38:52 UTC" duration-ms="10016">
+    <test started-at="2021-11-14T18:13:13 UTC" name="Surefire test" finished-at="2021-11-14T18:13:25 UTC" duration-ms="12345">
       <class name="lambdatest_p.TestNGTodo">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:lambdatest_p.TestNGTodo@74e52303]" started-at="2021-05-31T19:38:42 UTC" name="setUp" finished-at="2021-05-31T19:38:49 UTC" duration-ms="6210" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:lambdatest_p.TestNGTodo@694abbdc]" started-at="2021-11-14T18:13:13 UTC" name="setUp" finished-at="2021-11-14T18:13:20 UTC" duration-ms="7651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testSimple()[pri:0, instance:lambdatest_p.TestNGTodo@74e52303]" started-at="2021-05-31T19:38:49 UTC" name="testSimple" finished-at="2021-05-31T19:38:51 UTC" duration-ms="2419" status="PASS">
+        <test-method signature="scrollink_integration()[pri:0, instance:lambdatest_p.TestNGTodo@694abbdc]" started-at="2021-11-14T18:13:20 UTC" name="scrollink_integration" finished-at="2021-11-14T18:13:23 UTC" duration-ms="3078" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSimple -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdatest_p.TestNGTodo@74e52303]" started-at="2021-05-31T19:38:51 UTC" name="tearDown" finished-at="2021-05-31T19:38:52 UTC" duration-ms="1364" status="PASS">
+        </test-method> <!-- scrollink_integration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:lambdatest_p.TestNGTodo@694abbdc]" started-at="2021-11-14T18:13:23 UTC" name="tearDown" finished-at="2021-11-14T18:13:25 UTC" duration-ms="1581" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

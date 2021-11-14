@@ -58,6 +58,7 @@ public class TestNGTodo{
             je.executeScript("arguments[0].scrollIntoView(true);",elmnt);
             System.out.println(elmnt.getText());
             elmnt.click();
+            
            
            // Let's add an item in the list.
             driver.findElement(By.id("sampletodotext")).sendKeys("Yey, Let's add it to list");
