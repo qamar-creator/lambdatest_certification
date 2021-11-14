@@ -44,7 +44,7 @@ public class TestNGTodo{
   }
 
   @Test
-  public void testSimple() throws Exception {
+  public void scrollink_integration() throws Exception {
      try {
             //Change it to production page
           driver.get("https://www.lambdatest.com/"); // Navigate to this URL
