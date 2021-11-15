@@ -10,7 +10,3 @@ ports:
     onOpen: open-preview
 
 
-
-vscode:
-  extensions:
-    - hbenl.vscode-test-explorer
